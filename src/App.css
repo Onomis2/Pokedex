@@ -14,11 +14,49 @@
     background-position: center;
 }
 
-.smalldata, .dataselect {
+.smalldata, .dataselect, .filters {
     flex: 1;
-    padding: 1rem;
-    box-sizing: border-box;
+    padding: 0.5rem;
     color: white;
+    max-height: 100vh;
+}
+
+.smalldata {
+    background-color: rgba(255, 255, 0, 0.2);
+    min-width: 50vw;
+    max-width: 50vw;
+}
+
+.dataselect {
+    background-color: rgba(255, 0, 255, 0.2);
+    overflow-y: auto;
+    min-width: 25vw;
+    max-width: 25vw
+}
+.dataselect img {
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.dataselect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dataselect li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-bottom: 0.5rem;
+}
+
+.filters {
+    background-color: rgba(0, 255, 255, 0.2);
+    min-width: 25vw;
+    max-width: 25vw;
 }
 
 .bigdata {
@@ -26,7 +64,6 @@
     scroll-snap-align: start;
     color: white;
     padding: 1rem;
-    box-sizing: border-box;
     background-image: url("/bottom_background.png");
     background-size: cover;
     background-position: center;
